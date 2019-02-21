@@ -1,0 +1,84 @@
+.main_div{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+  
+}
+.title{
+    margin-top: 10px;
+    color: #000;
+    display: flex;
+    flex:1;
+    justify-content: center;
+    align-items: center  
+}
+.inlineTitle{
+    display: inline;
+}
+.contentElement{
+    display:grid;
+    grid-template-columns: auto auto auto;
+
+
+   
+}
+.clinicBox{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    z-index: 1;
+}
+.box{
+    background-image: url("/assets/images/doctor.jpg");
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    border: 0px solid;
+    height: 250px;
+    width: 300px;
+    margin-left: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius:25px;
+    background-repeat: no-repeat;
+    background-size: 300px 200px;
+    z-index: 2;
+    box-shadow: 10px 10px 8px #888888;
+    
+    
+  }
+  .TitleBox{
+      display:flex;
+      flex: 1;
+      flex-direction: row;
+      align-content: center;
+      justify-content: center;
+      align-items: flex-end;
+      
+     
+      
+  }
+
+  .booking { 
+      display: flex;
+     flex: 1;
+     height: 50px;
+     justify-content: flex-end;
+    background-color:rgb(228, 87, 46);
+    font-size: 14px;
+    font-weight: bold;
+    justify-content: center;
+    
+    border-bottom-right-radius:25px;
+  }
+  .clinicTitle{ 
+    display: flex;
+    flex: 2;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 12px;
+    margin-left: 10px;
+    font-size: 15px;
+    font-weight: bold;
+   
+}

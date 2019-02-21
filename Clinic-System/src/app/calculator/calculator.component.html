@@ -1,0 +1,21 @@
+<div class="main_div">
+
+<div class="title"> 
+<div class="inlineTitle"> <h2 style="color:rgb(117, 233, 232)">CLINIC</h2></div>
+<div class="inlineTitle"> <h2>APP</h2></div>
+</div>
+
+<div class="contentElement">
+  
+  <div class="box" *ngFor="let p of products; let i=index;">
+   
+    <div class="TitleBox">
+      <div class="clinicTitle">{{p.title}}</div>
+      <button class="booking"(click)="openDialog(p.title,p.id)"><label>Book</label></button>
+    </div>
+ 
+  </div>
+  
+</div>
+</div>
+

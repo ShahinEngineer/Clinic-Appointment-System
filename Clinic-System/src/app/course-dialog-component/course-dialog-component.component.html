@@ -1,0 +1,31 @@
+<form [formGroup]="clinicForm" (ngSubmit)="onSubmit()">
+<div class="main_div">
+
+<div class="title">
+  <h2>BookAt:{{description}}{{id}}</h2>
+</div>
+<div class="fildes">
+  <div class="filed">
+    <input type="text" name="" formControlName="name" [ngClass]="{ 'is-invalid': submitted && f.name.errors }" placeholder="Your Full Name" [(ngModel)]="name" >
+    <div *ngIf="submitted && f.name.errors" class="invalid-feedback"></div>
+  </div>
+  <div class="filed">
+    <input type="text" name="" [ngClass]="{ 'is-invalid': submitted && f.email.errors }" formControlName="email" placeholder="Your Email Address" [(ngModel)]="email">
+    <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+        <div *ngIf="f.email.errors.required"></div>
+        <div *ngIf="f.email.errors.email"></div>
+    </div>
+  </div>
+    <div class="filed">
+        <input type="text" name=""  [ngClass]="{ 'is-invalid': submitted && f.phone.errors }" formControlName="phone" placeholder="Your Phone Number" [(ngModel)]="phone">
+        </div>
+        <div class="filed">
+            <input type="text" onfocus="(this.type='date')" name="select data" [ngClass]="{ 'is-invalid': submitted && f.date.errors }" formControlName="date" value="Select date" placeholder="Select date" [(ngModel)]="date" > 
+            </div>
+            <div class="filed">
+                <button  [disabled]="loading" class="button" >Book Now</button>
+             </div>
+</div>
+</div>
+</form>
+(click)="bookingDate()"

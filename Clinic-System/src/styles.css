@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.my-panel .mat-dialog-container {
+    width: 450px;
+    overflow: hidden;
+    border-radius: 25px;
+    padding: 0px;
+
+}
